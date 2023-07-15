@@ -148,14 +148,7 @@
             phone: document.getElementById("telefonoForm").value
         }
 
-        var response = grecaptcha.getResponse();
 
-        if (response.length == 0){
-            document.getElementById('error_recaptcha').innerHTML = "Debe completar el captcha";
-            return;
-        }else{
-            document.getElementById('error_recaptcha').innerHTML = "";
-        }
         
         if (!errorForm(form)) return;
 
